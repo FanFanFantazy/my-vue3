@@ -1,4 +1,5 @@
 <template>
+  <MyChart title="My First Chart" />
 </template>
 
 <script>

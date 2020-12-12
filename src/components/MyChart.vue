@@ -1,19 +1,21 @@
 <template>
-  <h1>{{ msg }}</h1>
-  <button @click="count++">count is: {{ count }}</button>
-  <p>Edit <code>components/HelloWorld.vue</code> to test hot module replacement.</p>
+  <div>
+    <h1>{{ title }}</h1>
+  </div>
 </template>
 
 <script>
+import go from "gojs";
+const $ = go.GraphObject.make;
 export default {
-  name: 'HelloWorld',
+  name: "MyChart",
   props: {
-    msg: String
+    title: String
   },
   data() {
-    return {
-      count: 0
-    }
-  }
-}
+    return {};
+  },
+};
 </script>
+<style scoped>
+</style>
